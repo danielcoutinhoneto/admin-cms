@@ -9,10 +9,9 @@ namespace admin_cms.Models.Infraestrutura.Autenticacao
 
     public override void OnActionExecuting(ActionExecutingContext filterContext)
     {
-      if (string.IsNullOrEmpty(filterContext.HttpContext.Request.Cookies["alunos"]))
-      //if (string.IsNullOrEmpty(filterContext.HttpContext.Session.GetString("alunos")))
+      if (string.IsNullOrEmpty(filterContext.HttpContext.Request.Cookies["adm_cms"]))
       {
-        filterContext.HttpContext.Response.Redirect("/");
+        filterContext.HttpContext.Response.Redirect("/login");
         return;
       }
       base.OnActionExecuting(filterContext);
