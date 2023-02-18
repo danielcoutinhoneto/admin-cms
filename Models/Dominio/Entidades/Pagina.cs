@@ -27,6 +27,6 @@ namespace admin_cms.Models.Dominio.Entidades
     public bool Home { get; set; }
 
     [Required]
-    public bool Ordem { get; set; }
+    public int Ordem { get; set; }
   }
 }

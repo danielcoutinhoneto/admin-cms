@@ -80,8 +80,8 @@ namespace admincms.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<bool>("Ordem")
-                        .HasColumnType("bit");
+                    b.Property<int>("Ordem")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

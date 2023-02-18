@@ -11,7 +11,7 @@ using admin_cms.Models.Infraestrutura.Database;
 namespace admincms.Migrations
 {
     [DbContext(typeof(ContextoCms))]
-    [Migration("20230218172706_AddPaginas")]
+    [Migration("20230218192038_AddPaginas")]
     partial class AddPaginas
     {
         /// <inheritdoc />
@@ -83,8 +83,8 @@ namespace admincms.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<bool>("Ordem")
-                        .HasColumnType("bit");
+                    b.Property<int>("Ordem")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
