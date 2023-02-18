@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSession();
+// builder.Services.AddSession();
 
 builder.Services.AddControllersWithViews();
 
@@ -27,7 +27,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession();
+// app.UseSession();
 
 app.UseAuthorization();
 
